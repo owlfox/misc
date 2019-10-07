@@ -4,8 +4,7 @@ def f(i):
     for i in range(1,i+1):
         isDby3 = i % 3 == 0 
         isDby5 = i % 5 == 0 
-        print(isDby3,isDby5,i)
-        if isDby3 and isDby3:
+        if isDby3 and isDby5:
             rtn.append(i)
         elif isDby3:
             pass
@@ -13,7 +12,6 @@ def f(i):
             pass
         else:
             rtn.append(i)
-    print(rtn)
     return len(rtn)
 
 if __name__ == '__main__':
